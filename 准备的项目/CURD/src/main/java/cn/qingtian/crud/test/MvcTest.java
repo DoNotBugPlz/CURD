@@ -59,7 +59,14 @@ public class MvcTest {
             System.out.println("  " + i);
         }
        ArrayList<Employee> employeeArrayList  =(ArrayList<Employee>) pageInfo.getList();
+
         employeeArrayList.stream().map(Employee::getEmpName);
         System.out.println("zjw new branch");
+
+        employeeArrayList.forEach(i->System.out.print(i));
+    
+
+
+
     }
 }
