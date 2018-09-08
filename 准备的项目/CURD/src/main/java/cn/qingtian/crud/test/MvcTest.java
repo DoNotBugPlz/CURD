@@ -26,7 +26,7 @@ import java.util.ArrayList;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@ContextConfiguration(locations = {"classpath:applicationContext.xml", "file:../../../web/WEB-INF/dispatcherServlet-servlet.xml"})
+@ContextConfiguration(locations = {"classpath:applicationContext.xml", "file:D:\\IdeaWorkSpace\\CURD_dn\\准备的项目\\CURD\\web\\WEB-INF\\dispatcherServlet-servlet.xml"})
 public class MvcTest {
     @Autowired
     WebApplicationContext context;
@@ -60,7 +60,6 @@ public class MvcTest {
         }
        ArrayList<Employee> employeeArrayList  =(ArrayList<Employee>) pageInfo.getList();
         employeeArrayList.stream().map(Employee::getEmpName);
-        System.out.println("change from zjw on MvcTest in line 63");
-
+        System.out.println("zjw new branch");
     }
 }
