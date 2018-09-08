@@ -59,7 +59,7 @@ public class MvcTest {
             System.out.println("  " + i);
         }
        ArrayList<Employee> employeeArrayList  =(ArrayList<Employee>) pageInfo.getList();
-        employeeArrayList.stream().map(Employee::getEmpName);
+        employeeArrayList.forEach(i->System.out.print(i));
 
 
     }
