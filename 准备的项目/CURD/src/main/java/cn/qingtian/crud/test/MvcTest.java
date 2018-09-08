@@ -60,6 +60,7 @@ public class MvcTest {
         }
        ArrayList<Employee> employeeArrayList  =(ArrayList<Employee>) pageInfo.getList();
         employeeArrayList.forEach(i->System.out.print(i));
+        System.out.println("朱君文是笨蛋！");
 
 
     }
